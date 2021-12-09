@@ -1,0 +1,37 @@
+footer {
+    padding: 3rem 0;
+    .footer-ctn {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2rem;
+        .col {
+            width: 100%;
+            font-size: 1.5rem;
+            padding: 1.5rem;
+            ul > li {
+                transition: all 0.2s linear;
+            }
+            ul > li:hover {
+                color: $Bright-Blue;
+                transform: translateX(1rem);
+            }
+        }
+        .col-infor {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            img {
+                width: 70%;
+            }
+        }
+        .col-social {
+            ion-icon {
+                font-size: 4rem;
+                margin-right: 2rem;
+                &:hover {
+                    color: $Bright-Blue;
+                }
+            }
+        }
+    }
+}
